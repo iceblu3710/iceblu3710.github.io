@@ -1,3 +1,3 @@
-# My GitHub Jekyll website
+# uMinded's GitHub Jekyll blog
 
-This is where I will keep snippets and notes about programming and make general blog postings.
+I will use this site to log my programming notes and any projects I am working on.
