@@ -6,37 +6,13 @@ tags: [linux, shell, programming]
 ---
 This is a little writeup on how to get a very useful terminal setup on any Debian based Linux. Example of my setup below:
 
-![Example screen setup](https://uminded.files.wordpress.com/2015/08/byobu.jpg =660x)
+<img src="/images/byobu.jpg"  width="660">
 
 My custom .bashrc file, give me a customized prompt (current directory and size as well as previous commands exit status). In addition to this it provides a whack of aliases to make commands simpler to type, as well as some pseudo functions. Download from pastebin [HERE](http://pastebin.com/Jx8iVqE2)
 
 ---
 
-####Useful apt-get aliases
-
-* `install` : sudo apt-fast install
-* `addrepo` : sudo add-apt-repository
-* `searchIn` : apt-file search
-
-
-####Useful shorthand aliases
-
-* `murder` : 'kill -9'  
-* `alert` : Useful for things like "make; alert" and when complete will pop up an on screen notification.  
-* `hist` : Grep through bash history, very useful.  
-
-####Useful pseudo programs
-
-* `extract` : Automatically appends the needed options to tar for you.
-* `netinfo` : shows network information for your system
-* `downforme` : Check to see if a site is down for everyone or just me
-* `cp_pro` : copy with progress bar
-* `mkdir_go` : make a directory and enter into it
-* `bu` : Back up a file by appending UNIXTIME.backup
-
----
-
-###Installing my custom bashrc
+### Installing my custom bashrc
 
 ````
 sudo add-apt-repository ppa:apt-fast/stable
@@ -49,7 +25,31 @@ Open a terminal and try it out!
 
 ---
 
-####Solarized dark256 color scheme
+#### Useful apt-get aliases
+
+* `install` : sudo apt-fast install
+* `addrepo` : sudo add-apt-repository
+* `searchIn` : apt-file search
+
+
+#### Useful shorthand aliases
+
+* `murder` : 'kill -9'  
+* `alert` : Useful for things like "make; alert" and when complete will pop up an on screen notification.  
+* `hist` : Grep through bash history, very useful.  
+
+#### Useful pseudo programs
+
+* `extract` : Automatically appends the needed options to tar for you.
+* `netinfo` : shows network information for your system
+* `downforme` : Check to see if a site is down for everyone or just me
+* `cp_pro` : copy with progress bar
+* `mkdir_go` : make a directory and enter into it
+* `bu` : Back up a file by appending UNIXTIME.backup
+
+---
+
+#### Solarized dark256 color scheme
 
 * Get the color scheme for tmux [HERE](https://github.com/seebi/tmux-colors-solarized) just copy 256 pallet to ~/.tmux.conf  
 * Vim plugins and highlighters [HERE](https://github.com/amix/vimrc)  
