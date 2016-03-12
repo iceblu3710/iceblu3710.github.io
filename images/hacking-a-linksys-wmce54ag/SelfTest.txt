@@ -1,0 +1,326 @@
+﻿---: RESET
+---: Clocks inited
+---: InitDRAM
+---: Memory inited
+---: Changing DQ values for Tatung
+---: Changing A values for Tatung
+---: InitTLB
+
+---: InitCache
+---: Test RAM
+---: Testing DWords uncached
+---: Testing Halflings Uncached
+---: Testing Bytes Uncached
+---: Testing DWords Cached
+---: Testing Halflings Cached
+---: Testing Bytes Cached
+---: Testing Address Lines
+---: Testing Address Lines
+---: Test DWords for the IPL, low mem
+---: Test DWords for the IPL, hi mem
+---: ROM based memory tests completed
+---: Copying IPL image to RAM
+---: Jumping into RAM
+
+---: Executing in RAM
+
+---: RAM TEST MODE - RAM WILL BE TESTED CONTINUOUSLY
+
+---: Testing all DWords uncached with 00000000
+.
+.
+.
+
+---: Testing all DWords uncached with ffffffff
+.
+.
+.
+
+---: Testing all DWords uncached with 55555555
+.
+.
+.
+.
+
+---: Testing all DWords uncached with AAAAAAAA
+.
+.
+.
+
+---: Testing all HWords uncached with 0000
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all HWords uncached with ffff
+.
+.
+.
+.
+.
+.
+
+---: Testing all HWords uncached with 5555
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all HWords uncached with AAAA
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes uncached with 00
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+
+.
+.
+.
+.
+
+---: Testing all Bytes uncached with ff
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes uncached with 55
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes uncached with AA
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing Address Lines Dword uncached
+.
+.
+.
+.
+
+---: Testing Address Lines HWord uncached
+.
+.
+.
+.
+.
+.
+
+---: Testing Address Lines BYTE uncached
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all DWords cached with 00000000
+.
+.
+.
+
+---: Testing all DWords cached with ffffffff
+.
+.
+.
+
+---: Testing all DWords cached with 55555555
+.
+.
+.
+.
+
+---: Testing all DWords cached with AAAAAAAA
+.
+.
+.
+
+---: Testing all HWords cached with 0000
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all HWords cached with ffff
+.
+.
+.
+
+.
+.
+.
+
+---: Testing all HWords cached with 5555
+.
+.
+.
+.
+.
+.
+.
+
+
+---: Testing all HWords cached with AAAA
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes cached with 00
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes cached with ff
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing all Bytes cached with 55
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+
+---: Testing all Bytes cached with AA
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---: Testing Address Lines Dword cached
+.
+.
+.
+.
+
+---: Testing Address Lines HWord cached
+.
+.
+.
+.
+.
+.
+
+---: Testing Address Lines BYTE cached
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.

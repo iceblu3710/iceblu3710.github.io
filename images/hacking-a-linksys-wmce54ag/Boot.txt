@@ -1,0 +1,702 @@
+﻿---: RESET
+---: Clocks inited
+---: InitDRAM
+---: Memory inited
+---: Changing DQ values for Tatung
+---: Changing A values for Tatung
+---: InitTLB
+---: InitCache
+---: Test RAM
+---: Testing DWords uncached
+---: Testing Halflings Uncached
+---: Testing Bytes Uncached
+---: Testing DWords Cached
+---: Testing Halflings Cached
+---: Testing Bytes Cached
+---: Testing Address Lines
+---: Testing Address Lines
+---: Test DWords for the IPL, low mem
+
+---: Test DWords for the IPL, hi mem
+---: ROM based memory tests completed
+---: Copying IPL image to RAM
+---: Jumping into RAM
+
+
+---: Executing in RAM
+---: In-RAM Testing DWords A3A00000-A3FE0000
+---: RAM based Memory tests completed
+
+---: Jumping to IPLEntry()
+---: IPL built on (Sep  3 2004, 00:38:36)
+---: IPL size is 7318 bytes
+---: Uncompressing from 83FA7318 to 83A00000
+---: Hdr size of 83FA7318 is 14C bytes
+---: Uncompressing from 83FA7464 to 83A00000
+
+---: Jumping into BPL at location 0x83A00000
+---: 
+---: BPL Built on (Sep  3 2004 00:38:43)
+---: InitBus 0
+---: Device=9, Function=0, HeaderType=800000, VendorID=813910EC
+---: Device=9, Function=1, HeaderType=0, VendorID=819710EC
+---: Device=10, Function=0, HeaderType=0, VendorID=13168C
+---: Device=20, Function=0, HeaderType=800000, VendorID=48551002
+
+---: Device=20, Function=1, HeaderType=800000, VendorID=48561002
+---: Device=20, Function=2, HeaderType=0, VendorID=48571002
+---: Device=20, Function=5, HeaderType=800000, VendorID=48581002
+---: Device=20, Function=6, HeaderType=800000, VendorID=48591002
+---: AllocateMem 0 20 0 10 14000000 (04000000)
+
+---: AllocateMem 0 20  12000000 (02000000)
+---: AllocateMem 0 10 0 10 11FF0000 (00010000)
+---: AllocateMem 0 20 0 18 11FE8000 (00008000)
+---: AllocateMem 0 20 2 10 11FE7000 (00001000)
+---: AllocateMem 0 9 0 14 11FE6F00 (00000100)
+---: AllocateMem 0 20 5 10 11FE6E00 (00000100)
+---: AllocateMem 0 20 6 10 11FE6D00 (00000100)
+---: Allocat0 00010000 00000000
+---: bridge0 dev=9 func=0, upper=FF00 lower=0
+---: bridge0 dev=14 func=0, upper=FE00 lower=0
+---: bridge0 dev=9 func=1, upper=FDC0 lower=0
+---: bridge0 dev=14 func=1, upper=FDB0 lower=0
+---: bridge0 dev=14 func=1, upper=FDA8 lower=0
+---: bridge0 dev=14 func=1, upper=FDA0 lower=0
+---: bridge0 14 func=1, upper=FD9C lower=0
+---: bridge0 dev=14 func=1, upper=FD98 lower=0
+---: PciInit Succeeded
+---: IPL size is 7318 bytes
+---: FLASH Vendor Id = 4010, product Id = 4012
+---: NAND flash found at BD000000
+---: Total number good blocks is 1024
+---: This is a NAND flash
+---: It offers FB8000 bytes of App
+---: Search for VendorID = 813910EC
+---: RTL Nic Found: IoAddr=000000FF Intr=0000FF00
+---: MAC Address is 00:0F:66:FE:07:4B
+---: PlatformInit is OK
+---: :ReadFlash 200 bytes at ofst 0+4000 
+---: NAND Rd 1 (1)
+---: 
+---: EDB BOOT HEADER
+---: IPL size is 7318 bytes
+---: Hdr size of 83FA7318 is 14C bytes
+---: hdver: 1.0
+---: Dtype: B01
+---: HScfg: 0001.0001
+---: HSver: 0000.0000
+---: OEMvr: 0001.0000.0000.0000
+---: OSver: 0005.0000.0000.0000
+---: Bldvr: 0001.1709.0000.0002
+---: mfgAs: Cisco-Linksys LLC
+---: modlA: WMCE54AG
+---: mdlAs: WMCE54AG
+---: Desc.: Dual-Band Wireless A/G Media Center Extender
+---: Resv1: 0000
+---: Resv2: 0000
+---: Bootl: 0000
+---: Resrv: 0000
+---: Bdate: 2004.09.03.07.39.16
+---: 
+---: Sign check OTP: 3C000 4000
+---: INFO: Signature check passed!
+---: 
+---: EDB LOADER 
+---: Composite TV
+---: IPL size is 7318 bytes
+---: Hdr size of 83FA7318 is 14C bytes
+---: Hdr size of 83FA7318 is 14C bytes
+---: BLB size is 1FD40 bytes
+---: Uncompressing from 83FC7058 to 80001000
+---: Hdr size of 83FC7058 is 4 bytes
+
+---: Uncompressing from 83FC705C to 80001000
+---: IPL size is 7318 bytes
+---: Hdr size of 83FA7318 is 14C bytes
+---: version is 1.1709.0.2
++++: CMD y
+
+---: BootLog time 0
+
+
+READY> ?
+
+
+SERIAL MODE COMMANDS ARE:
+
+SETMAC aabbccddeeff    -  Program MAC address into EEPROM
+
+GETMAC   -  Show the MAC address
+
+IDMAN    -  Show the bootloader IDMAN header
+
+ERASE    -  Erase the App and Persist Flash 
+
+ERASEALL - Erase all of flash
+
+REBOOT   -  Reboot the system
+
+STRESS   -  Run a stress test
+
+QUIT     -  Return to the bootloader
+
+DIAG     -  Load a program over the network
+
+HELP     -  Print this message
+
+?        -  Print this message
+
+
+
+READY> GETMAC
+---: Search for VendorID = 813910EC
+---: RTL Nic Found: IoAddr=000000FF Intr=0000FF00
+---: MAC Address is 00:0F:66:FE:07:4B
+  the MAC address is '00:0F:66:FE:07:4B'
+
+
+
+READY> QUIT
+QUITTING 
+
+---: Consider flash image
+---: BootLog time 2
+---: Load Local Flash image
+---: :ReadFlash 8000 bytes at ofst 0+8000 
+---: NAND Rd 2 (2)
+---: NAND Rd 3 (3)
+---: Hdr size of 82000000 is 164 bytes
+
+---: Hdr size of 82000000 is 164 bytes
+---: BLB size is 617CDC bytes
+---: hdrSize = 164, cmpSize = 617B78, sgnSize = 4000
+---: :ReadFlash 61BCDC bytes at ofst 0+8000 
+
+---: NAND Rd 2 (2)
+---: NAND Rd 3 (3)
+---: NAND Rd 4 (4)
+---: NAND Rd 5 (5)
+---: NAND Rd 6 (6)
+---: NAND Rd 7 (7)
+---: NAND Rd 8 (8)
+---: NAND Rd 9 (9)
+---: NAND Rd A (A)
+---: NAND Rd B (B)
+---: NAND Rd C (C)
+---: NAND Rd D (D)
+---: NAND Rd E (E)
+---: NAND Rd F (F)
+---: NAND Rd 10 (10)
+---: NAND Rd 11 (11)
+---: NAND Rd 12 (12)
+---: NAND Rd 13 (13)
+
+---: NAND Rd 14 (14)
+---: NAND Rd 15 (15)
+---: NAND Rd 16 (16)
+---: NAND Rd 17 (17)
+---: NAND Rd 18 (18)
+---: NAND Rd 19 (19)
+---: NAND Rd 1A (1A)
+---: NAND Rd 1B (1B)
+---: NAND Rd 1C (1C)
+---: NAND Rd 1D (1D)
+---: NAND Rd 1E (1E)
+---: NAND Rd 1F (1F)
+---: NAND Rd 20 (20)
+---: NAND Rd 21 (21)
+---: NAND Rd 22 (22)
+---: NAND Rd 23 (23)
+---: NAND Rd 24 (24)
+---: NAND Rd 25 (25)
+---: NAND Rd 26 (26)
+---: NAND Rd 27 (27)
+---: NAND Rd 28 (28)
+---: NAND Rd 29 (29)
+---: NAND Rd 2A (2A)
+---: NAND Rd 2B (2B)
+---: NAND Rd 2C (2C)
+---: NAND Rd 2D (2D)
+---: NAND Rd 2E (2E)
+---: NAND Rd 2F (2F)
+---: NAND Rd 30 (30)
+---: NAND Rd 31 (31)
+---: NAND Rd 32 (32)
+
+---: NAND Rd 33 (33)
+---: NAND Rd 34 (34)
+---: NAND Rd 35 (35)
+---: NAND Rd 36 (36)
+---: NAND Rd 37 (37)
+---: NAND Rd 38 (38)
+---: NAND Rd 39 (39)
+---: NAND Rd 3A (3A)
+
+---: NAND Rd 3B (3B)
+---: NAND Rd 3C (3C)
+---: NAND Rd 3D (3D)
+---: NAND Rd 3E (3E)
+---: NAND Rd 3F (3F)
+---: NAND Rd 40 (40)
+---: NAND Rd 41 (41)
+---: NAND Rd 42 (42)
+---: NAND Rd 43 (43)
+---: NAND Rd 44 (44)
+---: NAND Rd 45 (45)
+---: NAND Rd 46 (46)
+---: NAND Rd 47 (47)
+---: NAND Rd 48 (48)
+---: NAND Rd 49 (49)
+---: NAND Rd 4A (4A)
+---: NAND Rd 4B (4B)
+---: NAND Rd 4C (4C)
+---: NAND Rd 4D (4D)
+---: NAND Rd 4E (4E)
+---: NAND Rd 4F (4F)
+---: NAND Rd 50 (50)
+---: NAND Rd 51 (51)
+
+---: NAND Rd 52 (52)
+---: NAND Rd 53 (53)
+---: NAND Rd 54 (54)
+---: NAND Rd 55 (55)
+---: NAND Rd 56 (56)
+---: NAND Rd 57 (57)
+---: NAND Rd 58 (58)
+---: NAND Rd 59 (59)
+---: NAND Rd 5A (5A)
+---: NAND Rd 5B (5B)
+---: NAND Rd 5C (5C)
+---: NAND Rd 5D (5D)
+---: NAND Rd 5E (5E)
+---: NAND Rd 5F (5F)
+---: NAND Rd 60 (60)
+---: NAND Rd 61 (61)
+---: NAND Rd 62 (62)
+---: NAND Rd 63 (63)
+---: NAND Rd 64 (64)
+---: NAND Rd 65 (65)
+---: NAND Rd 66 (66)
+---: NAND Rd 67 (67)
+---: NAND Rd 68 (68)
+---: NAND Rd 69 (69)
+---: NAND Rd 6A (6A)
+---: NAND Rd 6B (6B)
+---: NAND Rd 6C (6C)
+---: NAND Rd 6D (6D)
+---: NAND Rd 6E (6E)
+---: NAND Rd 6F (6F)
+---: NAND Rd 70 (70)
+---: NAND Rd 71 (71)
+---: NAND Rd 72 (72)
+---: NAND Rd 73 (73)
+---: NAND Rd 74 (74)
+---: NAND Rd 75 (75)
+---: NAND Rd 76 (76)
+---: NAND Rd 77 (77)
+---: NAND Rd 78 (78)
+
+---: NAND Rd 79 (79)
+---: NAND Rd 7A (7A)
+---: NAND Rd 7B (7B)
+---: NAND Rd 7C (7C)
+---: NAND Rd 7D (7D)
+---: NAND Rd 7E (7E)
+---: NAND Rd 7F (7F)
+---: NAND Rd 80 (80)
+
+---: NAND Rd 81 (81)
+---: NAND Rd 82 (82)
+---: NAND Rd 83 (83)
+---: NAND Rd 84 (84)
+---: NAND Rd 85 (85)
+---: NAND Rd 86 (86)
+---: NAND Rd 87 (87)
+---: NAND Rd 88 (88)
+---: NAND Rd 89 (89)
+---: NAND Rd 8A (8A)
+---: NAND Rd 8B (8B)
+---: NAND Rd 8C (8C)
+---: NAND Rd 8D (8D)
+---: NAND Rd 8E (8E)
+---: NAND Rd 8F (8F)
+---: NAND Rd 90 (90)
+---: NAND Rd 91 (91)
+---: NAND Rd 92 (92)
+---: NAND Rd 93 (93)
+---: NAND Rd 94 (94)
+---: NAND Rd 95 (95)
+---: NAND Rd 96 (96)
+---: NAND Rd 97 (97)
+---: NAND Rd 98 (98)
+---: NAND Rd 99 (99)
+---: NAND Rd 9A (9A)
+---: NAND Rd 9B (9B)
+---: NAND Rd 9C (9C)
+---: NAND Rd 9D (9D)
+---: NAND Rd 9E (9E)
+---: NAND Rd 9F (9F)
+---: NAND Rd A0 (A0)
+---: NAND Rd A1 (A1)
+---: NAND Rd A2 (A2)
+---: NAND Rd A3 (A3)
+---: NAND Rd A4 (A4)
+---: NAND Rd A5 (A5)
+---: NAND Rd A6 (A6)
+---: NAND Rd A7 (A7)
+
+---: NAND Rd A8 (A8)
+---: NAND Rd A9 (A9)
+---: NAND Rd AA (AA)
+---: NAND Rd AB (AB)
+---: NAND Rd AC (AC)
+---: NAND Rd AD (AD)
+---: NAND Rd AE (AE)
+---: NAND Rd AF (AF)
+---: NAND Rd B0 (B0)
+---: NAND Rd B1 (B1)
+---: NAND Rd B2 (B2)
+---: NAND Rd B3 (B3)
+---: NAND Rd B4 (B4)
+---: NAND Rd B5 (B5)
+---: NAND Rd B6 (B6)
+---: NAND Rd B7 (B7)
+---: NAND Rd B8 (B8)
+---: NAND Rd B9 (B9)
+---: NAND Rd BA (BA)
+---: NAND Rd BB (BB)
+---: NAND Rd BC (BC)
+---: NAND Rd BD (BD)
+---: NAND Rd BE (BE)
+---: NAND Rd BF (BF)
+---: NAND Rd C0 (C0)
+---: NAND Rd C1 (C1)
+---: NAND Rd C2 (C2)
+---: NAND Rd C3 (C3)
+---: NAND Rd C4 (C4)
+---: NAND Rd C5 (C5)
+---: NAND Rd C6 (C6)
+---: NAND Rd C7 (C7)
+---: NAND Rd C8 (C8)
+---: NAND Rd C9 (C9)
+---: NAND Rd CA (CA)
+---: NAND Rd CB (CB)
+---: NAND Rd CC (CC)
+---: NAND Rd CD (CD)
+---: NAND Rd CE (CE)
+---: NAND Rd CF (CF)
+---: NAND Rd D0 (D0)
+---: NAND Rd D1 (D1)
+---: NAND Rd D2 (D2)
+---: NAND Rd D3 (D3)
+---: NAND Rd D4 (D4)
+---: NAND Rd D5 (D5)
+---: NAND Rd D6 (D6)
+---: NAND Rd D7 (D7)
+---: NAND Rd D8 (D8)
+---: NAND Rd D9 (D9)
+---: NAND Rd DA (DA)
+---: NAND Rd DB (DB)
+---: NAND Rd DC (DC)
+---: NAND Rd DD (DD)
+---: NAND Rd DE (DE)
+---: NAND Rd DF (DF)
+---: NAND Rd E0 (E0)
+---: NAND Rd E1 (E1)
+---: NAND Rd E2 (E2)
+---: NAND Rd E3 (E3)
+---: NAND Rd E4 (E4)
+---: NAND Rd E5 (E5)
+---: NAND Rd E6 (E6)
+---: NAND Rd E7 (E7)
+---: NAND Rd E8 (E8)
+---: NAND Rd E9 (E9)
+---: NAND Rd EA (EA)
+---: NAND Rd EB (EB)
+---: NAND Rd EC (EC)
+---: NAND Rd ED (ED)
+---: NAND Rd EE (EE)
+---: NAND Rd EF (EF)
+---: NAND Rd F0 (F0)
+---: NAND Rd F1 (F1)
+---: NAND Rd F2 (F2)
+---: NAND Rd F3 (F3)
+---: NAND Rd F4 (F4)
+---: NAND Rd F5 (F5)
+---: NAND Rd F6 (F6)
+---: NAND Rd F7 (F7)
+---: NAND Rd F8 (F8)
+---: NAND Rd F9 (F9)
+---: NAND Rd FA (FA)
+---: NAND Rd FB (FB)
+---: NAND Rd FC (FC)
+---: NAND Rd FD (FD)
+---: NAND Rd FE (FE)
+---: NAND Rd FF (FF)
+---: NAND Rd 100 (100)
+---: NAND Rd 101 (101)
+---: NAND Rd 102 (102)
+---: NAND Rd 103 (103)
+---: NAND Rd 104 (104)
+---: NAND Rd 105 (105)
+---: NAND Rd 106 (106)
+---: NAND Rd 107 (107)
+---: NAND Rd 108 (108)
+---: NAND Rd 109 (109)
+---: NAND Rd 10A (10A)
+---: NAND Rd 10B (10B)
+---: NAND Rd 10C (10C)
+---: NAND Rd 10D (10D)
+---: NAND Rd 10E (10E)
+---: NAND Rd 10F (10F)
+---: NAND Rd 110 (110)
+---: NAND Rd 111 (111)
+---: NAND Rd 112 (112)
+---: NAND Rd 113 (113)
+---: NAND Rd 114 (114)
+---: NAND Rd 115 (115)
+---: NAND Rd 116 (116)
+---: NAND Rd 117 (117)
+---: NAND Rd 118 (118)
+---: NAND Rd 119 (119)
+---: NAND Rd 11A (11A)
+---: NAND Rd 11B (11B)
+---: NAND Rd 11C (11C)
+---: NAND Rd 11D (11D)
+
+---: NAND Rd 11E (11E)
+---: NAND Rd 11F (11F)
+---: NAND Rd 120 (120)
+---: NAND Rd 121 (121)
+---: NAND Rd 122 (122)
+---: NAND Rd 123 (123)
+---: NAND Rd 124 (124)
+---: NAND Rd 125 (125)
+
+---: NAND Rd 126 (126)
+---: NAND Rd 127 (127)
+---: NAND Rd 128 (128)
+---: NAND Rd 129 (129)
+---: NAND Rd 12A (12A)
+---: NAND Rd 12B (12B)
+---: NAND Rd 12C (12C)
+---: NAND Rd 12D (12D)
+---: NAND Rd 12E (12E)
+---: NAND Rd 12F (12F)
+---: NAND Rd 130 (130)
+---: NAND Rd 131 (131)
+---: NAND Rd 132 (132)
+---: NAND Rd 133 (133)
+---: NAND Rd 134 (134)
+---: NAND Rd 135 (135)
+---: NAND Rd 136 (136)
+---: NAND Rd 137 (137)
+---: NAND Rd 138 (138)
+---: NAND Rd 139 (139)
+---: NAND Rd 13A (13A)
+---: NAND Rd 13B (13B)
+---: NAND Rd 13C (13C)
+
+---: NAND Rd 13D (13D)
+---: NAND Rd 13E (13E)
+---: NAND Rd 13F (13F)
+---: NAND Rd 140 (140)
+---: NAND Rd 141 (141)
+---: NAND Rd 142 (142)
+---: NAND Rd 143 (143)
+---: NAND Rd 144 (144)
+---: NAND Rd 145 (145)
+---: NAND Rd 146 (146)
+---: NAND Rd 147 (147)
+---: NAND Rd 148 (148)
+---: NAND Rd 149 (149)
+---: NAND Rd 14A (14A)
+---: NAND Rd 14B (14B)
+---: NAND Rd 14C (14C)
+---: NAND Rd 14D (14D)
+---: NAND Rd 14E (14E)
+---: NAND Rd 14F (14F)
+---: NAND Rd 150 (150)
+---: NAND Rd 151 (151)
+---: NAND Rd 152 (152)
+---: NAND Rd 153 (153)
+---: NAND Rd 154 (154)
+---: NAND Rd 155 (155)
+---: NAND Rd 156 (156)
+---: NAND Rd 157 (157)
+---: NAND Rd 158 (158)
+---: NAND Rd 159 (159)
+---: NAND Rd 15A (15A)
+---: NAND Rd 15B (15B)
+---: NAND Rd 15C (15C)
+---: NAND Rd 15D (15D)
+---: NAND Rd 15E (15E)
+---: NAND Rd 15F (15F)
+---: NAND Rd 160 (160)
+---: NAND Rd 161 (161)
+---: NAND Rd 162 (162)
+---: NAND Rd 163 (163)
+
+---: NAND Rd 164 (164)
+---: NAND Rd 165 (165)
+---: NAND Rd 166 (166)
+---: NAND Rd 167 (167)
+---: NAND Rd 168 (168)
+---: NAND Rd 169 (169)
+---: NAND Rd 16A (16A)
+---: NAND Rd 16B (16B)
+---: NAND Rd 16C (16C)
+---: NAND Rd 16D (16D)
+---: NAND Rd 16E (16E)
+---: NAND Rd 16F (16F)
+---: NAND Rd 170 (170)
+---: NAND Rd 171 (171)
+---: NAND Rd 172 (172)
+---: NAND Rd 173 (173)
+---: NAND Rd 174 (174)
+---: NAND Rd 175 (175)
+---: NAND Rd 176 (176)
+---: NAND Rd 177 (177)
+---: NAND Rd 178 (178)
+---: NAND Rd 179 (179)
+---: NAND Rd 17A (17A)
+
+---: NAND Rd 17B (17B)
+---: NAND Rd 17C (17C)
+---: NAND Rd 17D (17D)
+---: NAND Rd 17E (17E)
+---: NAND Rd 17F (17F)
+---: NAND Rd 180 (180)
+---: NAND Rd 181 (181)
+---: NAND Rd 182 (182)
+---: NAND Rd 183 (183)
+---: NAND Rd 184 (184)
+---: NAND Rd 185 (185)
+---: NAND Rd 186 (186)
+---: NAND Rd 187 (187)
+---: NAND Rd 188 (188)
+---: Hdr size of 82000000 is 164 bytes
+---: BLB size is 617CDC bytes
+---: Sign check: blob = 617CDC, sign = 4000
+---: INFO: Signature check passed!
+---: Hdr size of 82000000 is 164 bytes
+
+---: IPL size is 7318 bytes
+---: Hdr size of 83FA7318 is 14C bytes
+---: Uncompressing from 82000000 to 80001000
+---: Hdr size of 82000000 is 164 bytes
+---: Uncompressing from 82000164 to 80001000
+---: Exec of flash image ...
+---: BootLog time 1D
+---: Jumping into loaded image at location 0x80001000
+---: BootLog issuing a report
+---: Sending Bootlog 
+---: ::EraseFlash called
+---: Erase from sector [4000]
+---: NAND Ers 1 (1)
+---: 
+---: :WriteFlash 200 bytes at ofst 0+4000 
+---: NAND Rd 1 (1)
+---: NAND Ers 1 (1)
+---: NAND Wrt 1 (1)
+---: NAND Rd 1 (1)
+---: .
+---: Nic Terminated
+Windows CE Kernel for MIPS Built on Jun 24 2004 at 18:24:50
+
+ATI Xilleon X225-A13    (Device ID: 4855   Revision: 3)
+
+Aper  PhysBase  Size      VirtBase  AperBase  Access
+00    18000000  00010000  001c0000  001c0000  MM
+01    08000000  08000000  4e000000  4e000000  MM
+02    1c000000  04000000  56000000  56000000  MM
+03    11fe7000  00001000  001e0000  001e0000  MM
+07    11fe6e00  00000100  001f0000  001f0e00  MM
+08    11fe6d00  00000100  00200000  00200d00  MM
+10    0000fda8  00000008  0000fda8  0000fda8  IO
+11    0000fd9c  00000004  0000fd9c  0000fd9c  IO
+12    0000fdb0  00000010  0000fdb0  0000fdb0  IO
+14    00000000  00008000  00000000  3a000000  MM
+15    00000000  00008000  00000000  3a000000  MM
+16    00000000  00008000  00000000  3a000000  MM
+17    00000000008000  00000000  3a000000  MM
+18    00000000  00008000  00000000  3a000000  MM
+19    00000000  00008000  00000000  3a000000  MM
+20    00000000  00008000  00000000  3a000000  MM
+21    1a000000  02000000  5a000000  5a000000  MM
+22    11fe8000  00008000  001d0000  001d0000  MM
+
+
+XCLK = 165 MHz
+MCLK = 99 MHz
+MIPS = 299 MHz
+
+Memory Configuration: 32-bit 2-Channel DDR.
+Channel 0 Size: 02000000 (32 MB)
+Channel 1 Size: 02000000 (32 MB)
+Total mem Size: 04000000 (64 MB)
+
+PMON memory size is 00000fff (3KB)
+OS memory start at  00001000 (0MB)
+OS memory size is   01fff000 (31MB)
+
+Core initialization completed.
+
+FwIrqRetrievalThread (Queue entry 0x2c1c78) started, Synchronization Mutex released
+AtiCore_NotificationMsgActivate(1, ATI_MSG_TYPE_INTERRUPT_OCCURRED) returns 0x0
+
+FwIrq_QueueCreate: Thread Synchronization Event -506191174 passed
+FwHkdCommunicationThread started, Synchronization Semaphore released
+AtiCore_NotificationMsgActivate(ATI_MSG_TYPE_FROM_HKD) returns 0x0
+FwHkdInit: Thread Synchronization Event -2116800870 passed
+Creating Message Event 0x41d1d9ea for HKD Message Tag 0x1
+Waiting for the Message Event 0x41d1d9ea
+HkdCommunicationThread: AtiCore_NotificationMsgWait() returns a message 2 of length 8
+FwHkdCommunicationThread: FROM_HKD Message 0x88086421 (Tag = 0x1) received
+Signalling the Message Event 0x41d1d9ea
+Message Event 0x41d1d9ea is received with coreResult = 0x0
+Deleting Message Event 0x41d1d9ea
+FwHkdInit() success
+Creating Message Event 0x1d1d9ea for HKD Message Tag 0x2
+Waiting for the Message Event 0x1d1d9ea
+HkdCommunicationThread: AtiCore_NotificationMsgWait() returns a message 2 of length 12
+FwHkdCommunicationThread: FROM_HKD Message 0x90086662 (Tag = 0x2) received
+Signalling the Message Event 0x1d1d9ea
+Message Event 0x1d1d9ea is received with coreResult = 0x0
+Deleting Message Event 0x1d1d9ea
+FwHkdGetTimestampingTimer() get Timer to be used 0x2970:0x296c
+
+ATI Xilleon X225-A13    (Device ID: 4855   Revision: 3)
+
+Aper  PhysBase  Size      VirtBase  AperBase  Access
+00    18000000  00010000  00150000  00150000  MM
+01    08000000  08000000  5c000000  5c000000  MM
+02    1c000000  04000000  64000000  64000000  MM
+03    11fe7000  00001000  00170000  00170000  MM
+07    11fe6e00  00000100  00180000  00180e00  MM
+08    11fe6d00  00000100  00190000  00190d00  MM
+10    0000fda8  00000008  0000fda8  0000fda8  IO
+11    0000fd9c  00000004  0000fd9c  0000fd9c  IO
+12    0000fdb0  00000010  0000fdb0  0000fdb0  IO
+14    00000000  00008000  00000000  48000000  MM
+15    00000000  00008000  00000000  48000000  MM
+16    00000000  00008000  00000000  48000000  MM
+17    00000000  00008000  00000000  48000000  MM
+18    00000000  00008000  00000000  48000000  MM
+19    0000  00008000  00000000  48000000  MM
+20    00000000  00008000  00000000  48000000  MM
+22    11fe8000  00008000  00160000  00160000  MM
+
+
+XCLK = 165 MHz
+MCLK = 99 MHz
+MIPS = 299 MHz
+
+Memory Configuration: 32-bit 2-Channel DDR.
+Channel 0 Size: 02000000 (32 MB)
+Channel 1 Size: 02000000 (32 MB)
+Total mem Size: 04000000 (64 MB)
+
+
+Core initializati
