@@ -1,6 +1,6 @@
 # Site settings
 title: "uMinded's blog"
-description: "uMinded's notes and projects"
+description: "My notes and projects"
 url: 'https://iceblu3710.github.io/'
 baseurl: '/'
 # google_analytics: 'UA-75012409-1'
