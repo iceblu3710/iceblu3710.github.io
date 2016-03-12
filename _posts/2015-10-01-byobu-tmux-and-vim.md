@@ -6,7 +6,8 @@ tags: [linux, shell, programming]
 ---
 This is a little writeup on how to get a very useful terminal setup on any Debian based Linux. Example of my setup below:
 
-<img src="/images/byobu.jpg"  width="660">
+![Terminal Preview](/images/byobu.jpg){:width="600px"}
+
 
 My custom .bashrc file, give me a customized prompt (current directory and size as well as previous commands exit status). In addition to this it provides a whack of aliases to make commands simpler to type, as well as some pseudo functions. Download from pastebin [HERE](http://pastebin.com/Jx8iVqE2)
 
