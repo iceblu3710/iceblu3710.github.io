@@ -1,5 +1,5 @@
 ---
-title: Toshiba e-Studio 3511
+title: Hacking a Linksys WMCE54AG
 date: 2011-07-01T00:00:00.000Z
 categories: []
 tags:
@@ -94,5 +94,5 @@ So far I have leared this; The MFG jumper puts the unit into infinate self check
 
 ### Boot Info
 
-[Boot](/images/hacking-a-linksys-wmce54ag/Boot.txt)
+[Boot](/images/hacking-a-linksys-wmce54ag/Boot.txt)  
 [SelfTest](/images/hacking-a-linksys-wmce54ag/SelfTest.txt)
