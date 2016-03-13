@@ -1,6 +1,6 @@
 ---
-title: Mini High Speed Spindle
-date: 2010-05-01
+title: AVR SPI Testing
+date: 2010-07-24
 categories: [programming]
 tags:
   - avr
