@@ -13,6 +13,12 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
+.highlight[title]::before, .highlighter-rouge[title]::before{
+	content:attr(title);
+	text-align:center;
+	display:block;
+}
+
 .btn, 
 .navigation__item a {
   margin: 5px 0;
